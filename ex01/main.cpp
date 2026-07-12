@@ -6,8 +6,18 @@
 /*   By: knomura <knomura@student.42tokyo.jp>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/07/12 18:32:28 by knomura           #+#    #+#             */
-/*   Updated: 2026/07/12 18:32:34 by knomura          ###   ########.fr       */
+/*   Updated: 2026/07/12 19:18:51 by knomura          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "Zombie.hpp"
+
+int main()
+{
+	int n = 10;
+	Zombie *p = zombieHorde(n, "hoge");
+
+	for (int i = 0; i < n; i++)
+		p[i].announce();
+	delete[] p;
+}

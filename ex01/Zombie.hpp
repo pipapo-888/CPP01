@@ -6,7 +6,7 @@
 /*   By: knomura <knomura@student.42tokyo.jp>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/07/12 17:39:25 by knomura           #+#    #+#             */
-/*   Updated: 2026/07/12 19:03:27 by knomura          ###   ########.fr       */
+/*   Updated: 2026/07/12 19:11:12 by knomura          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,5 +28,7 @@ public:
 	void set_name(std::string name);
 	~Zombie();
 };
+
+Zombie* zombieHorde(int n, std::string name);
 
 #endif

@@ -6,11 +6,11 @@
 #    By: knomura <knomura@student.42tokyo.jp>       +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2026/07/11 14:15:46 by knomura           #+#    #+#              #
-#    Updated: 2026/07/12 18:32:19 by knomura          ###   ########.fr        #
+#    Updated: 2026/07/12 19:12:45 by knomura          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-NAME = BraiiiiiiinnnzzzZ
+NAME = Moar
 
 CXX = c++
 
