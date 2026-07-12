@@ -1,30 +1,22 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   Zombie.cpp                                         :+:      :+:    :+:   */
+/*   zombieHorde.cpp                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: knomura <knomura@student.42tokyo.jp>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/07/11 15:31:14 by knomura           #+#    #+#             */
-/*   Updated: 2026/07/12 19:02:40 by knomura          ###   ########.fr       */
+/*   Created: 2026/07/11 15:48:33 by knomura           #+#    #+#             */
+/*   Updated: 2026/07/12 19:07:48 by knomura          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <iostream>
 #include "Zombie.hpp"
 
-Zombie::Zombie() {}
-
-Zombie::Zombie(std::string name) : _name(name)
+Zombie* zombieHorde(int n, std::string name)
 {
-}
+	Zombie *p = new Zombie[n];
 
-void Zombie::announce()
-{
-	std::cout << _name << ": BraiiiiiiinnnzzzZ..." << std::endl;
-}
-
-Zombie::~Zombie()
-{
-	std::cout << "Deleting " << _name << std::endl;
+	for (int i = 0; i < n; i++)
+		p[i].set_name(name);
+	return p;
 }
