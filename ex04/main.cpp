@@ -6,7 +6,7 @@
 /*   By: knomura <knomura@student.42tokyo.jp>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/07/15 17:38:21 by knomura           #+#    #+#             */
-/*   Updated: 2026/07/15 19:05:46 by knomura          ###   ########.fr       */
+/*   Updated: 2026/07/15 19:28:06 by knomura          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,8 +27,10 @@ int main(int ac, char *av[])
 		std::cout << "No file\n";
 		return 0;
 	}
+	std::string outputFile = std::string(av[1]) + ".replace";
+	std::ofstream newfile(outputFile.c_str());
 	std::string line;
-	int pos = 0;
+	std::string::size_type pos = 0;
 	while(std::getline(file, line))
 	{
 		while ((pos = line.find(s1)) != std::string::npos)
@@ -36,7 +38,7 @@ int main(int ac, char *av[])
 			line.erase(pos, s1.size());
 			line.insert(pos, s2);
 		}
-		std::cout << line << std::endl;
+		newfile << line << std::endl;
 	}
 	return 0;
 }
