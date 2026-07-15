@@ -6,7 +6,7 @@
 /*   By: knomura <knomura@student.42tokyo.jp>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/07/12 17:39:25 by knomura           #+#    #+#             */
-/*   Updated: 2026/07/12 19:03:34 by knomura          ###   ########.fr       */
+/*   Updated: 2026/07/15 12:14:55 by knomura          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,6 @@
 #define ZOMBIE_HPP
 
 #include <string>
-#include <iostream>
 
 class Zombie
 {
