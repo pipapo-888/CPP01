@@ -6,7 +6,7 @@
 /*   By: knomura <knomura@student.42tokyo.jp>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/07/15 17:38:21 by knomura           #+#    #+#             */
-/*   Updated: 2026/07/15 20:00:40 by knomura          ###   ########.fr       */
+/*   Updated: 2026/07/15 20:05:15 by knomura          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,10 +30,9 @@ int main(int ac, char *av[])
 	std::string outputFile = std::string(av[1]) + ".replace";
 	std::ofstream newfile(outputFile.c_str());
 	std::string line;
-	std::string::size_type pos = 0;
 	while(std::getline(file, line))
 	{
-		pos = 0;
+		std::string::size_type pos = 0;
 		while ((pos = line.find(s1, pos)) != std::string::npos)
 		{
 			line.erase(pos, s1.size());
