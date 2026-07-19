@@ -1,32 +1,17 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   Zombie.hpp                                         :+:      :+:    :+:   */
+/*   main.cpp                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: knomura <knomura@student.42tokyo.jp>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/07/12 17:39:25 by knomura           #+#    #+#             */
-/*   Updated: 2026/07/19 15:30:41 by knomura          ###   ########.fr       */
+/*   Created: 2026/07/19 15:59:06 by knomura           #+#    #+#             */
+/*   Updated: 2026/07/19 15:59:33 by knomura          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef ZOMBIE_HPP
-#define ZOMBIE_HPP
-
-#include <string>
-
-class Zombie
+int main()
 {
-private:
-	std::string _name;
 
-public:
-	Zombie(std::string name);
-	void announce();
-	~Zombie();
-};
-
-Zombie *newZombie(std::string name);
-void randomChump(std::string name);
-
-#endif
+	return 0;
+}
