@@ -6,7 +6,7 @@
 /*   By: knomura <knomura@student.42tokyo.jp>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/07/12 17:39:25 by knomura           #+#    #+#             */
-/*   Updated: 2026/07/15 13:35:20 by knomura          ###   ########.fr       */
+/*   Updated: 2026/07/29 19:05:21 by knomura          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,12 +22,12 @@ private:
 
 public:
 	Zombie();
-	Zombie(std::string name);
+	Zombie(const std::string &name);
 	void announce();
-	void set_name(std::string name);
+	void set_name(const std::string &name);
 	~Zombie();
 };
 
-Zombie* zombieHorde(int n, std::string name);
+Zombie* zombieHorde(int n, const std::string &name);
 
 #endif

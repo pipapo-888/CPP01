@@ -6,7 +6,7 @@
 /*   By: knomura <knomura@student.42tokyo.jp>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/07/12 18:32:28 by knomura           #+#    #+#             */
-/*   Updated: 2026/07/12 19:18:51 by knomura          ###   ########.fr       */
+/*   Updated: 2026/07/29 19:14:18 by knomura          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,3 +21,10 @@ int main()
 		p[i].announce();
 	delete[] p;
 }
+
+// int main()
+// {
+// 	Zombie *p = zombieHorde(0, "hoge");
+
+// 	delete[] p;
+// }
