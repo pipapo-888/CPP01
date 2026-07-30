@@ -6,7 +6,7 @@
 /*   By: knomura <knomura@student.42tokyo.jp>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/07/15 15:50:55 by knomura           #+#    #+#             */
-/*   Updated: 2026/07/15 17:32:23 by knomura          ###   ########.fr       */
+/*   Updated: 2026/07/30 19:18:08 by knomura          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,6 +23,11 @@ HumanB::~HumanB()
 
 void HumanB::attack()
 {
+	if (!_buki)
+	{
+		std::cout << "Buki Not Setted\n";
+		return ;
+	}
 	std::cout << _name << " attacks with their " << _buki->getType() << std::endl;
 }
 
