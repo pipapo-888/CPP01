@@ -6,7 +6,7 @@
 #    By: knomura <knomura@student.42tokyo.jp>       +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2026/07/15 17:38:50 by knomura           #+#    #+#              #
-#    Updated: 2026/07/15 17:38:51 by knomura          ###   ########.fr        #
+#    Updated: 2026/08/08 16:33:33 by knomura          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -16,7 +16,7 @@ CXX = c++
 
 CXXFLAGS = -Wall -Wextra -Werror -std=c++98
 
-SRCS = main.cpp
+SRCS = main.cpp Sed.cpp
 
 OBJS = $(SRCS:%.cpp=%.o)
 
