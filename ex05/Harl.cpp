@@ -6,7 +6,7 @@
 /*   By: knomura <knomura@student.42tokyo.jp>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/07/18 16:21:34 by knomura           #+#    #+#             */
-/*   Updated: 2026/07/19 15:05:20 by knomura          ###   ########.fr       */
+/*   Updated: 2026/08/11 15:15:55 by knomura          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -40,29 +40,26 @@ void Harl::complain(std::string level)
 			return ;
 		}
 	}
+	std::cout << "[ Not Found ]\n";
 	
 }
 
 void Harl::debug()
 {
-	std::cout << "[ DEBUG ]" << std::endl;
-	std::cout << DEBUG_MSG << std::endl;
+	std::cout << "[ DEBUG ] " << DEBUG_MSG << std::endl;
 }
 
 void Harl::info()
 {
-	std::cout << "[ INFO ]" << std::endl;
-	std::cout << INFO_MSG << std::endl;
+	std::cout << "[ INFO  ] " << INFO_MSG << std::endl;
 }
 
 void Harl::warning()
 {
-	std::cout << "[ WARNING ]" << std::endl;
-	std::cout << WARNING_MSG << std::endl;
+	std::cout << "[WARNING] " << WARNING_MSG << std::endl;
 }
 
 void Harl::error()
 {
-	std::cout << "[ ERROR ]" << std::endl;
-	std::cout << ERROR_MSG << std::endl;
+	std::cout << "[ ERROR ] " << ERROR_MSG << std::endl;
 }
