@@ -6,7 +6,7 @@
 /*   By: knomura <knomura@student.42tokyo.jp>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/07/12 18:32:28 by knomura           #+#    #+#             */
-/*   Updated: 2026/07/29 19:14:18 by knomura          ###   ########.fr       */
+/*   Updated: 2026/08/11 14:59:25 by knomura          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 int main()
 {
-	int n = 10;
+	int n = 4;
 	Zombie *p = zombieHorde(n, "hoge");
 
 	for (int i = 0; i < n; i++)
